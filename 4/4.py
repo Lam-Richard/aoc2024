@@ -41,7 +41,7 @@ def countXMASGivenSource(grid, y, x):
  
  
     # Right to Left & Bottom to Top
-    if x + 3 >= minX and y - 3 >= minY:
+    if x - 3 >= minX and y - 3 >= minY:
         count += ([grid[y - i][x - i] for i in range(4)] == [i for i in "XMAS"])    
         
     return count
